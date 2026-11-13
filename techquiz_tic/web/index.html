@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Innovation Club</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="splash-screen" class="screen">
+        <div id="splash-content" class="animate-up">
+            <img src="images/tic_logo.png" alt="TIC Logo" class="logo">
+            <p class="club-text">TECH INNOVATION CLUB</p>
+        </div>
+    </div>
+
+    <div id="home-screen" class="screen hidden">
+        <img src="images/tic_logo.png" alt="TIC Logo" class="logo">
+        <p class="club-text">TECH INNOVATION CLUB</p>
+        <div class="welcome-container">
+            <h1>HELLO 👋, <span>WELCOME!</span></h1>
+        </div>
+        <button id="get-started-btn" class="elevated-btn">Get Started..</button>
+    </div>
+
+    <div id="login-screen" class="screen hidden">
+        <div class="login-container">
+            <div class="profile-circle">
+                <img src="images/tic_logo.png" alt="Profile">
+            </div>
+            
+            <form id="login-form">
+                <div class="input-group">
+                    <input type="text" id="name" placeholder="Name" required>
+                    <span class="error-msg" id="name-error"></span>
+                </div>
+                
+                <div class="input-group">
+                    <input type="email" id="email" placeholder="Email address" required>
+                    <span class="error-msg" id="email-error"></span>
+                </div>
+
+                <div class="button-row">
+                    <button type="button" id="clear-btn" class="btn-secondary">Clear</button>
+                    <button type="submit" class="btn-primary">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
